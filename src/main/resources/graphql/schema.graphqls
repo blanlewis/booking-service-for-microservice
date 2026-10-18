@@ -1,0 +1,11 @@
+type Booking {
+    id: ID!
+    reference: String!
+    customer: String!
+    status: String!
+}
+
+type Query {
+    bookings: [Booking!]!
+    bookingById(id: ID!): Booking
+}
